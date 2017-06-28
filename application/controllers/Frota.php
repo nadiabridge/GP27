@@ -75,7 +75,7 @@ class Frota extends CI_Controller {
 
 		//verificar se o carro está disponível ou ocupado
 		if($selected_car->disponibilidade == CAR_IS_BUSY){
-			$this->session->set_flashdata('event', array('type' => 'danger', 'text' => 'Não foi possível eliminar o veículo '.$selected_car->matricula.'. Está ocupado.'));
+			$this->session->set_flashdata('event', array('type' => 'danger', 'text' => 'Não foi possível eliminar o veículo '.$selected_car->matricula.'. De momento não está disponível.'));
 			redirect('frota/pesquisar/', 'refresh');
 
 		}else{
@@ -202,7 +202,7 @@ class Frota extends CI_Controller {
 			if(!empty($this->input->post("car_id"))){
 				//id nao esta vazio, efetuar uma edicao
 				$result = $this->frota_model->update($this->input->post());
-				$msg = array('type' => 'success', 'text' => 'Alterações guardadas com sucesso.');
+				$msg = array('type' => 'success', 'text' => '<i class=fa fa-check-circle" aria-hidden="true"></i> Alterações guardadas com sucesso.');
 			}else{
 				//id esta vazio, adicionar novo veiculo à tabela automoveis
 				$result = $this->frota_model->createCar($this->input->post());

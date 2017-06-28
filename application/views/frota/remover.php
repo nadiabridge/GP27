@@ -3,22 +3,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <div class="container form-container">
 	<div class="starter-template">
+
 		<div class="row">
-			<div class="col-xs-10 col-xs-offset-1">
-				<div class="alert alert-warning">
-					Tem a certeza que deseja eliminar o carro com a matrícula <strong>"<?php echo $matricula?>"</strong> ?</a>
+			<div class="col-sm-8 col-sm-offset-4">
+				<div class="alert alert-danger">
+					<p>Confirma eliminar o veículo <strong>"<?php echo $matricula?>"</strong> ? </p>
 				</div>
 			</div>
 		</div>
+
 		<div class="row">
-			<div class="col-xs-4 col-xs-offset-7">
-			<?php echo form_open("frota/delete/",array(),array('id'=>$car_id));?>
-			<div class="text-right">
-				<a href="<?php echo base_url("frota/pesquisar/")?>" class="btn btn-warning">Cancelar</a>
-				<button class="btn btn-primary">Eliminar</button>
-			</div>
-			<?php echo form_close()?>
+			<div class="col-sm-8 col-sm-offset-4 pull-right">
+				<?php echo form_open("frota/delete/",array(),array('id'=>$car_id));?>
+				<button class="btn btn-warning" value="Cancelar"><a href="<?php echo base_url("frota/pesquisar/")?>">Cancelar</a></button>
+				<button class="btn btn-danger" value="Eliminar">Eliminar</button>
+				<?php echo form_close()?>
 			</div>
 		</div>
+
 	</div>
 </div>

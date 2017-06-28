@@ -1,54 +1,61 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<div class="container-fluid">
+
+<div class="container">
 
 	<?php 
 	$options = array("id" => "contact_form", "class" => "form-horizontal");
 	echo form_open('publico/contact/', $options);
 	?>
+	
 	<div class="starter-template">
+		<div class="form-group">
+			<div class="col-sm-7 col-sm-offset-5">
+				<h3><strong>Entre em contacto connosco</strong></h3>
+			</div>
+		</div><br>
 
 		<div class="form-group">
-			<div class="label_align col-sm-1 col-sm-offset-3">
+			<div class="text-left col-sm-2 col-sm-offset-3">
 				<label for="nome" class="control-label">Nome</label>
 			</div>
-			<div class="col-sm-5">
-				<input type="text" class="form-control" id="nome" name="nome" placeholder="Introduza o nome" value ="<?php echo set_value('nome')?>">
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o primeiro e último nome" value ="<?php echo set_value('nome')?>">
 				<?php echo form_error('nome');?>
 			</div>
 		</div>
 		
 		<div class="form-group">
-			<div class="label_align col-sm-1 col-sm-offset-3">
+			<div class="text-left col-sm-2 col-sm-offset-3">
 				<label for="email" class="control-label">Email</label>
 			</div>
-			<div class="col-sm-5">
-				<input type="email" class="form-control" id="email" name="email" placeholder="Introduza o email" value ="<?php echo set_value('email')?>">
+			<div class="col-sm-7">
+				<input type="email" class="form-control" id="email" name="email" placeholder="Insira o seu email" value ="<?php echo set_value('email')?>">
 				<?php echo form_error('email');?>
 			</div>
 		</div>
 
 		<div class="form-group">
-			<div class="label_align col-sm-1 col-sm-offset-3">
+			<div class="text-left col-sm-2 col-sm-offset-3">
 				<label for="mensagem" class="control-label">Mensagem</label>
 			</div>
-			<div class="col-sm-5">
-				<textarea class="form-control" rows="5" id="mensagem" name="mensagem" placeholder="Descreva aqui o assunto da sua mensagem.."><?php echo set_value('mensagem')?></textarea>
+			<div class="col-sm-7">
+				<textarea class="form-control" rows="5" id="mensagem" name="mensagem" placeholder="Escreva aqui a sua mensagem."><?php echo set_value('mensagem')?></textarea>
 				<?php echo form_error('mensagem');?>
 			</div>
 		</div>
 
 		<div class="form-group">
-			<div class="col-sm-1 col-sm-offset-8">
-				<button type="submit" class="btn btn-primary contact_btn">Enviar</button>
+			<div class="col-sm-2 col-sm-offset-10">
+				<button type="submit" class="btn btn-primary contact_btn pull-right">Enviar</button>
 			</div>
 		</div>
-	</div>
+	</div> <!-- starter-template-->
 	<?php
 	echo form_close();
 	?>
-</div>
+</div> <!-- .container -->
 
 <script>
 //	Validacao do Nome
