@@ -11,36 +11,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 	<div class="starter-template">
 		<div class="form-group">
-			<div class="col-sm-7 col-sm-offset-5">
+			<div class="col-sm-8 col-sm-offset-4">
 				<h3><strong>Entre em contacto connosco</strong></h3>
 			</div>
 		</div><br>
 
 		<div class="form-group">
-			<div class="text-left col-sm-2 col-sm-offset-3">
+			<div class="text-left col-sm-2 col-sm-offset-2">
 				<label for="nome" class="control-label">Nome</label>
 			</div>
-			<div class="col-sm-7">
+			<div class="col-sm-8">
 				<input type="text" class="form-control" id="nome" name="nome" placeholder="Insira o primeiro e último nome" value ="<?php echo set_value('nome')?>">
 				<?php echo form_error('nome');?>
 			</div>
 		</div>
 		
 		<div class="form-group">
-			<div class="text-left col-sm-2 col-sm-offset-3">
+			<div class="text-left col-sm-2 col-sm-offset-2">
 				<label for="email" class="control-label">Email</label>
 			</div>
-			<div class="col-sm-7">
+			<div class="col-sm-8">
 				<input type="email" class="form-control" id="email" name="email" placeholder="Insira o seu email" value ="<?php echo set_value('email')?>">
 				<?php echo form_error('email');?>
 			</div>
 		</div>
 
 		<div class="form-group">
-			<div class="text-left col-sm-2 col-sm-offset-3">
+			<div class="text-left col-sm-2 col-sm-offset-2">
 				<label for="mensagem" class="control-label">Mensagem</label>
 			</div>
-			<div class="col-sm-7">
+			<div class="col-sm-8">
 				<textarea class="form-control" rows="5" id="mensagem" name="mensagem" placeholder="Escreva aqui a sua mensagem."><?php echo set_value('mensagem')?></textarea>
 				<?php echo form_error('mensagem');?>
 			</div>

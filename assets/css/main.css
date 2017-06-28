@@ -1527,7 +1527,7 @@ ul.social_icons li  a i{
   background: none repeat scroll 0 0 #2E2E2E;
   border-top: 5px solid #C52D2F;
   height: 84px;
-  margin-top: 110px;
+  margin-top: 0;
 }
 
 .footer_left {

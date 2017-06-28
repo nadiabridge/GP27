@@ -5,13 +5,14 @@ body {
   padding: 5em 0 3em 0;
   /*text-align: center; */
 }
-.container-fluid{
-  padding-left: 0;
-  padding-right: 0;
+.remove_padding{
+  padding-left: 0px;
+  padding-right: 0px;
+  padding: 0px;
 }
 .container-fluid{
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .form-horizontal .form-group {
@@ -94,8 +95,13 @@ body {
 
 
 
+.footer{
+margin-top: 0;
+}
+
 
  /* ---------------------- BEGING footer.php -----------------------*/
+
 /*footer{ margin-top: 5%; background-color: #222; width: 100%; text-align: center; color: #4497C6;}
 
 #footDiv{ padding: 15px 0px 15px 0px; font-family: Arial; font-size: 1.5rem;}
@@ -123,7 +129,9 @@ select[readonly] {
 
 
 
-
+.panel_home{
+  min-height: 20em;
+  }
   /* ---------------------- HOME -----------------------*/
 /*.panel_home{
   min-height: 447px;
@@ -163,12 +171,15 @@ select[readonly] {
 
   #conatcat-info {
     background-color: #F2F2F2;
+    padding: 1em 0 2em 0;
   }
 
 
 
 
-
+.panel_about{
+  min-height: 33em;
+}
 /* ---------------------- ABOUT -----------------------
 .panel-default{
   margin-bottom: 50px;
@@ -201,8 +212,11 @@ select[readonly] {
 
 
 
+.search{
+  min-width: 100%;
+}
 
-/* ---------------------- FROTA pesquisa -----------------------*/
+/* ---------------------- FROTA pesquisa -----------------------
 .search{
 	min-width: 100%;
 }
@@ -223,7 +237,7 @@ a.btns_index{
   background-color: #e3e3e5;
 }
 
-
+*/
 
 
 
