@@ -97,7 +97,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="panel-heading text-center"><b>Mercedes</b></div>
 						<div class="panel-body panel_home">
 							<img src="<?php echo base_url('assets/images/slider/bg4.jpg')?>" class="img-responsive" alt="Responsive image">
-							<p class="lead pull-left">Deste 30€/dia</p>
+							<p class="lead pull-left" style="color:gray;">Deste 30€/dia</p>
 						</div>
 					</div>
 				</div>
@@ -106,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="panel-heading text-center"><b>Cancelamento Gratuito</b></div>
 						<div class="panel-body panel_home">
 							<!-- <img src="<?php //echo base_url('assets/images/bmw.jpg')?>" class="img-responsive" alt="Responsive image"> -->
-							<p class="lead pull-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+							<p class="lead pull-left" style="color:gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
 						</div>
 					</div>
 				</div>
@@ -114,8 +114,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="panel panel-default">
 						<div class="panel-heading text-center"><b>Reserve online</b></div>
 						<div class="panel-body panel_home">
-							<!-- <img src="<?php //echo base_url('assets/images/nissan.png')?>" class="img-responsive" alt="Responsive image"> -->
-							<p class="lead pull-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<img src="<?php echo base_url('assets/images/gallery/gallery4.jpg')?>" class="img-responsive" alt="Responsive image">
+							<p class="lead pull-left" style="color:gray;">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 						</div>
 					</div>
 				</div>
