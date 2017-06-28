@@ -2,33 +2,39 @@ body {
 }
 
 .starter-template {
-  padding: 5em 0 3em 0;
-  /*text-align: center; */
+	padding: 5em 0 3em 0;
+	/*text-align: center; */
 }
 .remove_padding{
-  padding-left: 0px;
-  padding-right: 0px;
-  padding: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding: 0px;
 }
 .container-fluid{
-  padding-left: 0px;
-  padding-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .form-horizontal .form-group {
-  margin-right: -15px; 
-  margin-left: -15px; 
+	margin-right: -15px; 
+	margin-left: -15px; 
 }
 .text-left{
-  color: #2E2E2E;
+	color: #2E2E2E;
 }
 
 @media (max-width: 767px){
-  .container > .navbar-header, .container > .navbar-collapse {
-    margin-left: 0;
-    padding-bottom: 1em;
-  }
+	.container > .navbar-header, .container > .navbar-collapse {
+		margin-left: 0;
+		padding-bottom: 1em;
+	}
 }
+
+
+
+
+
+
 
 /* ---------------------- BEGING header.php -----------------------*/
 .mainmenu__item{
@@ -43,83 +49,54 @@ body {
 /*indica qual a opçao do menu que esta ativa e quando o rato passa sobre a mesma */
 .mainmenu__item.active > a {
 	font-weight: bolder;
-  padding: 0 1em 0 1em;
+	padding: 0 1em 0 1em;
 }
 .mainmenu__item a:hover {
 	/*font-weight: normal; */
 }
 
-/* conteudo do dropdown menu
-.dropdown-content{
-	background-color: #f9f9f9;
+.dropdown:hover .dropdown-content{
+	opacity: 1;
+}
+
+.dropdown-content a{
 	width: 100%;
-	height: 40px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-	z-index: 1;
-	opacity: 0;
-	transition-property: opacity;
-	transition-duration: 1s;
-  } */
+	padding: 10px 10px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
 
-  .dropdown:hover .dropdown-content{
-   opacity: 1;
- }
+.dropdown-content a:hover {
+	background-color: #595959;
+	color: white;
+	font-weight: bolder;
+}
+/* manter a opçao "dropdown" ativa quando se está a navegar no seu sub-menu*/
+li a:hover, .dropdown:hover .dropbtn {
+	font-weight: bolder;
+	color: white;
+}
 
- .dropdown-content a{
-   width: 100%;
-   padding: 10px 10px;
-   display: block;
-   text-align: center;
-   text-decoration: none;
-   color: black;
- }
-
- .dropdown-content a:hover {
-   background-color: #595959;
-   color: white;
-   font-weight: bolder;
- }
- /* manter a opçao "dropdown" ativa quando se está a navegar no seu sub-menu*/
- li a:hover, .dropdown:hover .dropbtn {
-   font-weight: bolder;
-   color: white;
- }
-
- .active.mainmenu__item.dropdown > a:hover{
-   font-weight: normal;
- }
- /* ---------------------- END header.php -----------------------*/
+.active.mainmenu__item.dropdown > a:hover{
+	font-weight: normal;
+}
 
 
 
 
 
 
+
+
+
+/* ---------------------- BEGING footer.php -----------------------*/
 .footer{
-margin-top: 0;
+	margin-top: 0;
 }
 
 
- /* ---------------------- BEGING footer.php -----------------------*/
-
-/*footer{ margin-top: 5%; background-color: #222; width: 100%; text-align: center; color: #4497C6;}
-
-#footDiv{ padding: 15px 0px 15px 0px; font-family: Arial; font-size: 1.5rem;}
-
-.copyright { min-height:40px; background-color:#222;}
-.copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
-
-.bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
-.bottom_ul li { float:left; line-height:40px;}
-.bottom_ul li:before { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
-.bottom_ul li a { color:#FFF;  font-size:12px;}
-
-/*Simular campo inativo
-select[readonly] {
-  background: #eee; 
-  pointer-events: none;
-  touch-action: none;
-  } */
 
 
 
@@ -129,115 +106,55 @@ select[readonly] {
 
 
 
+/* ---------------------- BEGIN home.php -----------------------*/
 .panel_home{
-  min-height: 20em;
-  }
-  /* ---------------------- HOME -----------------------*/
-/*.panel_home{
-  min-height: 447px;
-  }
-  .botao_home{
-   float: right;
-   padding-left: 25px;
-   padding-right: 25px;
-   margin-bottom: 20px;
- }
+	min-height: 20em;
+}
 
- .titulo_home{
-   text-align: left;
- }
- .lead{
-   text-align: justify;
- }
- */
+.contact-info i{
+	margin-top: 0.5em;
+}
+#feature h1{
+	color: black;
+}
 
-/* ------------- CARROUSSEL -------------
- .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-  } */
+#services {
+	background-color: white;
+}
 
-  .contact-info i{
-    margin-top: 0.5em;
-  }
-  #feature h1{
-    color: black;
-  }
-
-  #services {
-    background-color: white;
-  }
-
-  #conatcat-info {
-    background-color: #F2F2F2;
-    padding: 1em 0 2em 0;
-  }
+#conatcat-info {
+	background-color: #F2F2F2;
+	padding: 1em 0 2em 0;
+}
+.panel{
+	margin-bottom: 20px;
+}
 
 
 
 
+
+/* ---------------------- BEGIN about.php -----------------------*/
 .panel_about{
-  min-height: 33em;
-}
-/* ---------------------- ABOUT -----------------------
-.panel-default{
-  margin-bottom: 50px;
-}
-.panel-heading{
-  height: 50px;
-}
-.panel-body{
-  text-align: justify;
-  overflow: auto;
-}
-.panel_about{
-  min-height: 300px;
+	min-height: 33em;
 }
 
 .img_bckg{
-  background-image: url("../images/pessoas2.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+	background-image: url("../images/pessoas2.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-*/
 
 
 
 
-
-
-
-
-
-.search{
-  min-width: 100%;
-}
-
-/* ---------------------- FROTA pesquisa -----------------------
+/* ---------------------- BEGIN frota/pesquisar.php -----------------------*/
 .search{
 	min-width: 100%;
 }
-.btns_index{
-	width: 100%;
-}
-a.btns_index{
-	line-height: 1;
-}
-.table>thead>tr>th, .table>tbody>tr>td, .table>tfoot>tr>td {
-  vertical-align: middle;
-  text-align: center;
-}
-.table>tbody>tr>td>a.search_link{
-  color: inherit;
-}
-.table-hover>tbody>tr:hover {
-  background-color: #e3e3e5;
-}
 
-*/
 
 
 

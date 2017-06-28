@@ -23,3 +23,5 @@ class Fabricantes_model extends CI_Model {
 	}
 	
 }
+
+

@@ -140,3 +140,4 @@ class Frota_model extends CI_Model {
 	}
 
 }
+

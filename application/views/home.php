@@ -2,18 +2,18 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <div class="container-fluid remove_padding">
+	<div class="row">
 
+		<section id="main-slider" class="no-margin">
+			<div class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#main-slider" data-slide-to="0" class="active"></li>
+					<li data-target="#main-slider" data-slide-to="1"></li>
+					<li data-target="#main-slider" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
 
-	<section id="main-slider" class="no-margin">
-		<div class="carousel slide">
-			<ol class="carousel-indicators">
-				<li data-target="#main-slider" data-slide-to="0" class="active"></li>
-				<li data-target="#main-slider" data-slide-to="1"></li>
-				<li data-target="#main-slider" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-
-				<div class="item active" style="background-image: url(assets/images/slider/bg1.jpg)"> 
+					<div class="item active" style="background-image: url(assets/images/slider/bg1.jpg)"> 
 				<!--	
 				<div class="item active">
 					<img src="<?php //echo base_url('/assets/images/slider/bg1.jpg')?>">
@@ -69,6 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<i class="fa fa-chevron-right"></i>
 </a>
 </section><!--/#main-slider-->
+
 
 
 <section id="feature">
@@ -163,9 +164,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div><!--/.container-->    
 	</section><!--/#conatcat-info-->
 
-
-
-
-
-
+</div> 
 </div>

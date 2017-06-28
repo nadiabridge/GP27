@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 
-			<div class="form-group" style="min-width: 50%;">
+			<div class="form-group" style="min-width: 69%;">
 				<div class="col-sm-8" style="min-width: 100%;">
 					<input type="text" class="form-control search" name="search_term" placeholder="Termo de pesquisar..." value="<?php echo $search_term ?>">
 				</div>
